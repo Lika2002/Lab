@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Row containing the level of study and form of study -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Selectare Nivel de Studii -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Alege nivelul de studii:"
+                android:textSize="18sp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnCollege"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Colegiu" />
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnBachelor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Licență" />
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnMaster"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Master" />
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnDoctorate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Doctorat" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <!-- Selectare Formă de Studii -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:text="Alege forma de studii:"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupStudyForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zi" />
+
+                <RadioButton
+                    android:id="@+id/radioFR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FR" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Selectare Specialitate -->
+    <Button
+        android:id="@+id/btnChooseSpecialty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Alege Specialitatea" />
+
+    <!-- Selectare Limbi Străine -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:text="Alege limba străină:"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engleză" />
+
+    <CheckBox
+        android:id="@+id/checkFrench"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Franceză" />
+
+    <EditText
+        android:id="@+id/etOtherLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Altă limbă (opțional)" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="151dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo" />
+
+    <!-- OK and Cancel Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <Button
+            android:id="@+id/btnOkSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/btnCancelSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </LinearLayout>
+</LinearLayout>
+

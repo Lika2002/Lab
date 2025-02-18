@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <!-- Titlu Pagina -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rezumat Informații"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:paddingBottom="16dp" />
+
+    <!-- Informații afisate -->
+    <TextView
+        android:id="@+id/tvFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nume: "
+        android:textSize="18sp"
+        android:textColor="#444444"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvStudyLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivel de studii: "
+        android:textSize="18sp"
+        android:textColor="#444444"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvStudyForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forma de studii: "
+        android:textSize="18sp"
+        android:textColor="#444444"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvSpecialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specialitate: "
+        android:textSize="18sp"
+        android:textColor="#444444"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvLanguages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limbi străine: "
+        android:textSize="18sp"
+        android:textColor="#444444"
+        android:paddingBottom="16dp" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imgLogoThird"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Buton de revenire -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Înapoi"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#007BFF"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
